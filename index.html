@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather in App</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Weather in</h1>
+        <form class="search-location">
+            <input type="text" name="city" placeholder="What city?" autocomplete="off" class="form-rounded">
+        </form>
+
+        <div class="back-card">
+            <div class="card-plus">
+                <div class="today">
+                    <p><span class="time">11:11 pm</span>
+                        - <span class="date">Sunday, 29 Aug '21</span>
+                </div>
+            </div>
+
+            <div class="card-top">
+                <div class="city-name">
+                    <p>Abuja</p>
+                    <span>...</span>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div class="card-mid">
+                    <div class="temp">
+                        <span>30&deg;C</span>
+                    </div>
+                    <div class="condition-temp">
+                        <p class="condition">Thunder Storm</p>
+                        <p class="high">30&deg;C</p>
+                        <p class="low">27&deg;C</p>
+                    </div>
+                </div>
+
+                <div class="icon-container">
+                    <i class="ri-cloud-line"></i>
+                </div>
+                <div class="card-bottom">
+                    <div class="desc">
+                        <p>30&deg;C</p>
+                        <span>Feels Like</span>
+                    </div>
+                    <div class="desc">
+                        <p>55%</p>
+                        <span>Humidity</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

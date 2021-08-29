@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: #fff;
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 375px;
+    height: 667px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Monet_-_Impression%2C_Sunrise.jpg/800px-Monet_-_Impression%2C_Sunrise.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: -6px -6px 9px #fff, 6px 6px 9px rgba(0, 0, 0, 0.4);
+}
+
+.title {
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 60px 0 20px 0;
+    color: #fff;
+    opacity: .9;
+}
+
+.search-location input {
+    border: none; 
+    padding: 10px 15px;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, .3);
+    color: #707070;
+}
+
+.back-card {
+    width: 300px;
+    height: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card-top {
+    background: rgba(255, 255, 255, .3);
+    border-radius: 30px;
+    padding: 5px 10px;
+}
+
+.city-name p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.city-name span {
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.card-body {
+    background: rgba(255, 255, 255, .3);
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body .card-mid {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card-body .card-mid .temp span{
+    font-size: 4rem;
+    font-weight: 100;
+    letter-spacing: -5px;
+    white-space: nowrap;
+}
+
+.card-body .card-mid .condition-temp .condition {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1rem;
+    text-transform: capitalize;
+    margin-bottom: 2px;
+}
+
+.high::before {
+    content: "";
+    background: url('/up.svg') no-repeat;
+    width: 10px;
+    height: 15px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    filter: contrast(200%);
+    margin-right: 10px;
+    margin-bottom: 2px;
+}
+
+.low::before {
+    content: "";
+    background: url('/down.svg') no-repeat;
+    width: 10px;
+    height: 15px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    filter: contrast(200%);
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+.icon-container i {
+    font-size: 4rem;
+    border: 1.5px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.card-bottom {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card-bottom p {
+    font-size: 45px;
+    font-weight: 100;
+    letter-spacing: -2px;
+}
+
+.card-bottom span {
+    font-size: 12px;
+}
+
+.card-plus {
+    width: 300px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.card-plus .today p{
+    font-size: 1rem;
+}
+
+.card-plus .today span {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
