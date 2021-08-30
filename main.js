@@ -70,12 +70,10 @@ searchForm.addEventListener('submit', e => {
         .catch((error) => { console.log(error) });
 })
 
-const today = document.querySelector('.today');
 const date = document.querySelector('.date');
+let now = new Date();
 
-const now = new Date();
-
-date.innerHTML = now.toUTCString();
+date.textContent = `${moment(now).format("llll")}`;
 
 /*
 function getNow() {
